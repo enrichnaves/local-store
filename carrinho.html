@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EnrichStore</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="jscarrinho.js"></script>
+    </head>
+    <body>
+        <section>
+                <div class = "top-nav-bar">
+                    <div class = "cart-box">
+                        <img src = "imagens/logo.png" class = "logo" onclick="inicial()">
+                    </div>
+                </div>
+        </section>
+        <section class = "container">
+            <div class = "ca-geral">
+                <div class = "padding">
+                    <div class = "ca-titulo">
+                        <p><h3>Os itens que você escolheu...</h3></p>
+                    </div>
+                </div>
+                    <table id="listTable" class="table"></table>
+                <h4 class="text-center text-success">Total: <span id="totalValue">$ 0,00</span></h4>
+                <button class = "botao" onclick="cadastrar()">Finalizar</button>
+            </div>
+        </section>
+        <section class="footer">
+                <div class ="blank">
+                    
+                </div>
+                <div class = "bottom-bar">
+                    <p>Direitos autorais © 2019 EnrichStore Todos os direitos reservados.</p>
+                    <p>enrichsotre@enrichsotre.com.br</p>
+                    <p>0800-999-8111</p>
+                    <p><h2>@EnrichStore</h2></p>
+                </div>
+        </section>
+    </body>
+</html>

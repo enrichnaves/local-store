@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EnrichStore</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <section>
+                <div class = "top-nav-bar">
+                    <div class = "cart-box">
+                        <img src = "imagens/logo.png" class = "logo" onclick="inicial()">
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class = "padding">
+                <div class = "ca-titulo">
+                    <p><h3>Informe os dados para finalizar seu pedido</h3></p>
+                </div>
+            </div>
+            
+            <div class = "cadastrar-geral">
+                
+                <div class="formulario">
+                    <form name="formulario" onsubmit="return verficar()">
+                    <p>E-mail</p>
+                    <p><input type="text" name = "email" class = "campo-texto campos" placeholder="email@exemplo.com" required/></p>
+                    <p>Endereço</p>
+                    <p><input type="text" name = "endereco" class = "campo-texto campos" placeholder="Rua n° 123, Bairro - Cidade - Estado" required/></p>
+                    <p>
+                        <p>CEP                                                    CPF</p>
+                        <input type="text" name = "cep" class = "campo-metade campos" placeholder="00000-000"  required/>
+                        <input type="text" name = "cpf" class = "campo-metade campos" placeholder="11122233344" >
+                    </p>
+                    <p>
+                        <p>Numero do cartão                                                                CCV</p>
+                        <input type="number" name = "numero_cartao" class = "nc campos" placeholder="0000111100001111" required/>
+                        <input type="number" name = "ccv" class = "ccv campos" min = "000" max = "999" placeholder="000" required/>
+                    </p>
+                    <p>Validade</p>
+                    <p>
+                        <input type="number" name = "validade_mes" class = "data campos" min ="1" max = "12" placeholder="00"  required/>
+                        <input type="number" name = "validade_ano" class = "data campos" min ="2019" max = "2029" placeholder="0000" required/>
+                    </p>
+                    <p>Nome</p>
+                    <p><input type="text" name = "nome" class = "campo-texto campos" placeholder="Nome Sobrenome UltimoNome" required/></p>
+                    <p><input type = "submit" value="Finalizar pedido" class = "botao" download="carrinho.txt"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+                <div class ="blank">
+                    
+                </div>
+                <div class = "bottom-bar">
+                    <p>Direitos autorais © 2019 EnrichStore Todos os direitos reservados.</p>
+                    <p>enrichsotre@enrichsotre.com.br</p>
+                    <p>0800-999-8111</p>
+                    <p><h2>@EnrichStore</h2></p>
+                </div>
+        </section>
+    </body>
+</html>

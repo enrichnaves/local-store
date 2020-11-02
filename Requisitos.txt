@@ -1,0 +1,3 @@
+Gerar relat�rio:
+de clientes cadastrados
+de vendas efetuadas
